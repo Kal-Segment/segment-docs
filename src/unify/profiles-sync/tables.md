@@ -159,7 +159,7 @@ This table maps Segment-generated identifiers, like `segment_id`, to external id
 | `TRIGGERING_EVENT_SOURCE_NAME`| The name of the source that triggered the event.                                                    |
 | `TRIGGERING_EVENT_SOURCE_SLUG`| The slug of the source that triggered the event.                                                    |
 | `TRIGGERING_EVENT_TYPE`       | The type of tracking method used for triggering the incoming event.                             |
-| `UUID_TS`                     | A unique identifier of the timestamp.                                                               |
+| `UUID_TS`                     | The timestamp when the row was loaded into the customer warehouse.                                                               |
 
 
 The anonymous site visits sample used earlier would generate the following events:
@@ -337,7 +337,7 @@ This table has the following columns:
 | `value`                             | The value of the trait provided by the customer's Identify payload.                              |
 | `seq`                               | A sequential value derived from the timestamp. Enables ordering/sorting within a given unique trait. |
 | `received_at`                       | The timestamp when the Segment API receives the payload from the client or server.                            |
-| `uuid_ts`                           | A unique identifier of the timestamp.                           |
+| `uuid_ts`                           | The timestamp when the row was loaded into the customer warehouse.                            |
 | `timestamp`                         | The UTC-converted timestamp set by the Segment library.                            |
 
 
@@ -363,7 +363,7 @@ This table has the following columns:
 | `value`            | The value of the trait provided by the customer's Identify payload.        |
 | `seq`            | A sequential value derived from the timestamp. Enables ordering/sorting within a given unique trait.       |
 | `received_at`                       | The timestamp when the Segment API receives the payload from the client or server.                            |
-| `uuid_ts`                           | A unique identifier of the timestamp.                           |
+| `uuid_ts`                           | The timestamp when the row was loaded into the customer warehouse.                           |
 | `timestamp`                         | The UTC-converted timestamp set by the Segment library.                            |
 
 ### The profile_merges table
@@ -388,7 +388,7 @@ This table has the following columns:
 | `segment_id`            | The profile ID that Segment appends to an event or an identifier at the time it was first observed.       |
 | `seq`            | A sequential value derived from the timestamp. Enables ordering/sorting within a given unique trait.       |
 | `received_at`                       | The timestamp when the Segment API receives the payload from the client or server.                            |
-| `uuid_ts`                           | A unique identifier of the timestamp.                           |
+| `uuid_ts`                           | The timestamp when the row was loaded into the customer warehouse.                            |
 | `timestamp`                         | The UTC-converted timestamp set by the Segment library.                            |
 
 
